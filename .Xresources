@@ -1,0 +1,30 @@
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+XTerm*background: #6aa7a5
+XTerm*foreground: #6aa7a5
+XTerm*reverseVideo: on
+XTerm*faceName: HackRegular:size=11:antialias=true
+XTerm*selectToClipboard: true
+
+! URxvt SETUP HERE !
+URxvt.internalBorder: 6
+URxvt.font: xft:Hack:size=10
+URxvt.depth: 32
+URxvt.background:	[100]#1E272B
+URxvt*scrollBar:                      false
+URxvt*mouseWheelScrollPage:           false
+URxvt*cursorBlink:                    true
+URxvt*foreground: 		                #EAD49B
+URxvt*cursorColor:		                #EAD49B
+URxvt*saveLines: 5000
