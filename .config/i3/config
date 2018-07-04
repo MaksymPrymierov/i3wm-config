@@ -31,9 +31,19 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt
+#background = #211324
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+new_window none
+new_float none
+
+# Hide borders
+hide_edge_borders smart
+default_border none
+default_floating_border none
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
@@ -174,6 +184,8 @@ bindsym $mod+r mode "resize"
 ## Custom User Stuff ##
 #######################
 
+for_window [class="urxvt"] border pixel 0
+
 # set i3wm-gaps stuff
 new_window pixel 2
 gaps outer 10		# outer gaps
@@ -186,7 +198,7 @@ exec_always polybar example
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym $mod+Enter exec lilyterm
+#bindsym $mod+Enter exec lilyterm
 # set media player controls
 bindsym XF86AudioPlay exec playerctl play
 bindsym Print exec xfce4-screenshooter
@@ -200,21 +212,18 @@ bindsym $mod+m bar mode toggle
 # Theme colors
 # class                 border  	backgr. 	text    	indic.  	child_border
 # My colors
-client.background	$background_i3wmthemer
+#client.background	$background_i3wmthemer
 
-client.focused         	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color02_i3wmthemer		$color02_i3wmthemer	
-client.unfocused       	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
-client.focused_inactive	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
+#client.focused         	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color02_i3wmthemer		$color02_i3wmthemer	
+#client.unfocused       	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
+#client.focused_inactive	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
 #client.urgent		        $foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
-client.placeholder	    $foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
+#client.placeholder	    $foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
 exec setxkbmap "us,ru" ",winkeys" "grp:ctrl_shift_toggle"
 exec nitrogen --restore
-exec ~/Telegram/Telegram
+exec telegram-desktop
 exec nm-applet
-exec volti
+#exec volti
 # launch apps
-bindsym $mod+b exec firefox-developer-edition
-bindsym $mod+c exec thunar
-bindsym $mod+z exec eclipse
-bindsym $mod+t exec subl
-bindsym $mod+x exec clementine
+bindsym $mod+b exec firefox
+bindsym $mod+c exec nautilus
