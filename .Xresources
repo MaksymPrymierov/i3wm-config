@@ -8,42 +8,41 @@
 ! For comments use "!"
 
 ! special
-*.foreground:   #cec4cb
-*.background:   #141013
-*.cursorColor:  #cec4cb
+*.foreground:   #dbd4e8
+*.background:   #0c0026
+*.cursorColor:  #dbd4e8
 
 ! black
-*.color0:       #201a1e
-*.color8:       #a0d2d7
+*.color0:       #120b1b
+*.color8:       #9fb36d
 
 ! red
-*.color1:       #2a2228
-*.color9:       #88bcc2
+*.color1:       #1e142b
+*.color9:       #af95d5
 
 ! green
-*.color2:       #3c3239
-*.color10:      #efdbd8
+*.color2:       #322344
+*.color10:      #d69c70
 
 ! yellow
-*.color3:       #564952
-*.color11:      #8bb8bd
+*.color3:       #4d3968
+*.color11:      #7ec5df
 
 ! blue
-*.color4:       #766471
-*.color12:      #cac59c
+*.color4:       #705495
+*.color12:      #85d0b7
 
 ! magenta
-*.color5:       #9c8696
-*.color13:      #cdd0eb
+*.color5:       #947bb7
+*.color13:      #b996ea
 
 ! cyan
-*.color6:       #beb1ba
-*.color14:      #e3beb9
+*.color6:       #baabd1
+*.color14:      #9db460
 
 ! white
-*.color7:       #e6e1e4
-*.color15:      #94d1d7
-
+*.color7:       #e5e0ee
+*.color15:      #ea56a7
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -56,21 +55,24 @@ Xft.lcdfilter: lcddefault
 
 #background = #211324
 
-XTerm*background: #2b2b2b
-XTerm*foreground: #e7e7e7
+XTerm*background: #211324
+XTerm*foreground: #f6f9f2
 XTerm*pointerColor: #16A085
 XTerm*faceName: Fixed
 XTerm*faceSize: 11
+XTerm.vt100.locale: true
+XTerm.vt100.faceName: xft:Hack:size=10
 
 ! стиль полосы прокрутки - rxvt (по умолчанию), plain (самый компактный), next, или xterm
 !URxvt.scrollBar: false
 
 URxvt.internalBorder: 6
-URxvt.font: xft:monaco:size=13
-URxvt.depth: 32
-URxvt.background:	[90]#211324
+URxvt.font: xft:Hack:bold:size=10
+URxvt.depth: 16
+URxvt.background:	[100]#0C0026
 URxvt*scrollBar:                      false
 URxvt*mouseWheelScrollPage:           false
 URxvt*cursorBlink:                    true
-URxvt*foreground: 		                #f6f9f2
-URxvt*cursorColor:		                #f6f9f2
+URxvt*foreground: 		                #dbd4e8
+URxvt*cursorColor:		                #dbd4e8
+URxvt*skipBuiltinGlyphs:    true

@@ -8,7 +8,6 @@
 ;=====================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #211324
 background-alt = #162025
 ;foreground = ${xrdb:color7:#222}
@@ -17,7 +16,7 @@ foreground-alt = #bfbfbf
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
-my_background 	= #211324
+my_background 	= #0C0026
 my_foreground 	= #bfbfbf
 my_color0	= #0f1619
 my_color1	= #393843
@@ -38,11 +37,11 @@ my_color15	= #bfbfbf
 
 [bar/example]
 width = 100%
-height = 27
+height = 25
 radius = 0
 fixed-center = false
 
-background = #211324
+background = ${colors.my_background}
 foreground = #fbfbfb
 
 line-size = 3
@@ -57,9 +56,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Source Code Pro Semibold:pixelsize=10;1"
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
-font-2 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-0 = "Source Code Pro Semibold:pixelsize=11;1" 
+font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=11;1" 
+font-2 = "Font Awesome 5 Brands:pixelsize=11;1"
 
 modules-left = i3
 modules-center = date
@@ -69,6 +68,9 @@ modules-right = wlan eth powermenu battery xkeyboard
 
 tray-position = right
 ;tray-padding =
+tray-transparent = false
+tray-background = ${colors.my_background}
+tray-detached = false
 
 cursor-click = pointer
 cursor-scroll = ns-resize
