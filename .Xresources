@@ -8,41 +8,42 @@
 ! For comments use "!"
 
 ! special
-*.foreground:   #dbd4e8
-*.background:   #0c0026
-*.cursorColor:  #dbd4e8
+*.foreground:   #d2e2e7
+*.background:   #020202
+*.cursorColor:  #d2e2e7
 
 ! black
-*.color0:       #120b1b
-*.color8:       #9fb36d
+*.color0:       #030404
+*.color8:       #8d70e3
 
 ! red
-*.color1:       #1e142b
-*.color9:       #af95d5
+*.color1:       #101415
+*.color9:       #8b6de3
 
 ! green
-*.color2:       #322344
-*.color10:      #d69c70
+*.color2:       #202628
+*.color10:      #747c2f
 
 ! yellow
-*.color3:       #4d3968
-*.color11:      #7ec5df
+*.color3:       #363f42
+*.color11:      #e35bb1
 
 ! blue
-*.color4:       #705495
-*.color12:      #85d0b7
+*.color4:       #525f63
+*.color12:      #de38a7
 
 ! magenta
-*.color5:       #947bb7
-*.color13:      #b996ea
+*.color5:       #74868b
+*.color13:      #4fa281
 
 ! cyan
-*.color6:       #baabd1
-*.color14:      #9db460
+*.color6:       #9cb4ba
+*.color14:      #a2ac5f
 
 ! white
-*.color7:       #e5e0ee
-*.color15:      #ea56a7
+*.color7:       #d7e5e9
+*.color15:      #4690a0
+
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -69,10 +70,10 @@ XTerm.vt100.faceName: xft:Hack:size=10
 URxvt.internalBorder: 6
 URxvt.font: xft:Hack:bold:size=10
 URxvt.depth: 16
-URxvt.background:	[100]#0C0026
+URxvt.background:	[100]#D2D3D8
 URxvt*scrollBar:                      false
 URxvt*mouseWheelScrollPage:           false
 URxvt*cursorBlink:                    true
-URxvt*foreground: 		                #dbd4e8
-URxvt*cursorColor:		                #dbd4e8
+URxvt*foreground: 		                #0F2731
+URxvt*cursorColor:		                #0F2731
 URxvt*skipBuiltinGlyphs:    true

@@ -8,16 +8,18 @@
 ;=====================================================
 
 [colors]
-background = #211324
-background-alt = #162025
+background = #D2D3D8
+background-alt = #D2D3D8
 ;foreground = ${xrdb:color7:#222}
-foreground = #bfbfbf
-foreground-alt = #bfbfbf
+foreground = #0F2731
+foreground-alt = #0F2731
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
-my_background 	= #0C0026
-my_foreground 	= #bfbfbf
+my_background 	= #D2D3D8
+my_background2  = #0B212C
+my_foreground 	= #0F2731
+my_foreground2 	= #3C5361
 my_color0	= #0f1619
 my_color1	= #393843
 my_color2	= #75404b
@@ -42,7 +44,7 @@ radius = 0
 fixed-center = false
 
 background = ${colors.my_background}
-foreground = #fbfbfb
+foreground = ${colors.my_foreground}
 
 line-size = 3
 line-color =
@@ -62,7 +64,7 @@ font-2 = "Font Awesome 5 Brands:pixelsize=11;1"
 
 modules-left = i3
 modules-center = date
-modules-right = wlan eth powermenu battery xkeyboard
+modules-right = wlan eth powermenu battery volume xkeyboard
 
 
 
@@ -227,8 +229,8 @@ interface = wlp7s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-foreground = #272827
-format-connected-background = #7E807E
+format-connected-foreground = ${colors.my_foreground2}
+format-connected-background = ${colors.my_foreground2}
 format-connected-padding = 2
 label-connected = %essid%
 
@@ -239,7 +241,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = #272827
+ramp-signal-foreground = ${colors.my_background2}
 
 [module/eth]
 type = internal/network
@@ -247,8 +249,8 @@ interface = enp2s0
 interval = 3.0
 
 format-connected-padding = 2
-format-connected-foreground = #272827
-format-connected-background = #7E807E
+format-connected-foreground = ${colors.my_foreground2}
+format-connected-background = ${colors.my_background2}
 format-connected-prefix = " "
 format-connected-prefix-foreground = #272827
 label-connected = %local_ip%
@@ -290,7 +292,7 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = |
+bar-volume-indicator = []
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
 bar-volume-fill-font = 2
