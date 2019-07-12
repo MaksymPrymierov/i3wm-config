@@ -8,7 +8,9 @@
 ;=====================================================
 
 [colors]
-background = #D2D3D8
+pseudo-transparency = true
+tray-transparent = true
+background = #8998a0
 background-alt = #D2D3D8
 ;foreground = ${xrdb:color7:#222}
 foreground = #0F2731
@@ -16,7 +18,7 @@ foreground-alt = #0F2731
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
-my_background 	= #D2D3D8
+my_background 	= #ccd5da
 my_background2  = #0B212C
 my_foreground 	= #0F2731
 my_foreground2 	= #3C5361
@@ -37,7 +39,7 @@ my_color13	= #662b37
 my_color14	= #4c584a
 my_color15	= #bfbfbf
 
-[bar/example]
+[bar/first]
 width = 100%
 height = 25
 radius = 0
@@ -62,17 +64,15 @@ font-0 = "Source Code Pro Semibold:pixelsize=11;1"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=11;1" 
 font-2 = "Font Awesome 5 Brands:pixelsize=11;1"
 
-modules-left = i3
+modules-left = i3 filesystem cpu
 modules-center = date
 modules-right = wlan eth powermenu battery volume xkeyboard
 
-
-
 tray-position = right
 ;tray-padding =
-tray-transparent = false
-tray-background = ${colors.my_background}
+tray-transparent = true
 tray-detached = false
+tray-background = ${colors.my_background}
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -104,6 +104,7 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
+mount-1 = /home
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted

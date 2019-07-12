@@ -192,7 +192,7 @@ gaps outer 10		# outer gaps
 gaps inner 20		# inner gaps
 
 # polybar start
-exec_always polybar example
+exec_always sh ~/.config/polybar/launch.sh
 
 # set pulse audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -209,21 +209,11 @@ exec compton -f --vsync drm
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
-# Theme colors
-# class                 border  	backgr. 	text    	indic.  	child_border
-# My colors
-#client.background	$background_i3wmthemer
-
-#client.focused         	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color02_i3wmthemer		$color02_i3wmthemer	
-#client.unfocused       	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
-#client.focused_inactive	$foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
-#client.urgent		        $foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
-#client.placeholder	    $foreground_i3wmthemer	$background_i3wmthemer	$foreground_i3wmthemer	$color04_i3wmthemer		$color04_i3wmthemer
-exec setxkbmap "us,ru" ",winkeys" "grp:ctrl_shift_toggle"
+exec setxkbmap "us,ru,ua" ",winkeys" "grp:ctrl_shift_toggle" # Language layout (English, Russian, Ukraine)
 exec nitrogen --restore
 exec telegram-desktop
 exec nm-applet
-#exec volti
-# launch apps
-bindsym $mod+b exec firefox
-bindsym $mod+c exec nautilus
+
+# User applications
+bindsym $mod+b exec chromium # Web browser
+bindsym $mod+c exec caja     # File manager

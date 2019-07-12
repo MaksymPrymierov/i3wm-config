@@ -8,4 +8,4 @@ killall -q polybar
 # while grep -x polybar >/dev/null; do sleep 1; done
 
 # Launch the example bar
-polybar bar
+polybar first
