@@ -9,3 +9,4 @@ killall -q polybar
 
 # Launch the example bar
 polybar first
+polybar second

@@ -42,8 +42,6 @@ new_float none
 
 # Hide borders
 hide_edge_borders smart
-default_border none
-default_floating_border none
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
@@ -186,11 +184,6 @@ bindsym $mod+r mode "resize"
 
 for_window [class="urxvt"] border pixel 0
 
-# set i3wm-gaps stuff
-new_window pixel 2
-gaps outer 10		# outer gaps
-gaps inner 20		# inner gaps
-
 # polybar start
 exec_always sh ~/.config/polybar/launch.sh
 
@@ -209,7 +202,7 @@ exec compton -f --vsync drm
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
-exec setxkbmap "us,ru,ua" ",winkeys" "grp:ctrl_shift_toggle" # Language layout (English, Russian, Ukraine)
+exec setxkbmap "us,ru" ",winkeys" "grp:ctrl_shift_toggle" # Language layout (English, Russian, Ukraine)
 exec nitrogen --restore
 exec telegram-desktop
 exec nm-applet

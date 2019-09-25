@@ -44,6 +44,46 @@ width = 100%
 height = 25
 radius = 0
 fixed-center = false
+monitor = eDP-1
+
+background = ${colors.my_background}
+foreground = ${colors.my_foreground}
+
+line-size = 3
+line-color =
+
+border-size = 0
+border-color =
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = "Source Code Pro Semibold:pixelsize=11;1" 
+font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=11;1" 
+font-2 = "Font Awesome 5 Brands:pixelsize=11;1"
+
+modules-left = i3 filesystem cpu
+modules-center = date
+modules-right = wlan eth powermenu battery volume xkeyboard
+
+tray-position = right
+;tray-padding =
+tray-transparent = true
+tray-detached = false
+tray-background = ${colors.my_background}
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/second]
+width = 100%
+height = 25
+radius = 0
+fixed-center = false
+monitor = DP-1
 
 background = ${colors.my_background}
 foreground = ${colors.my_foreground}
